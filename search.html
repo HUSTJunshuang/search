@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>资源聚合搜索</title>
+        <link rel="stylesheet" href="css\search.css">
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+        <script src="js/search.js"></script>
+    </head>
+    <body onload="init()">
+        <div id="header" style="padding: 0px; margin: 0px;">
+            <div id="NavBar" style="padding: 0px; margin: 0px; padding-left: 3%;">
+                <a href="https://hustjunshuang.github.io" class="nav" target="_blank">
+                    <h1 style="padding: 0px; margin: 0px;">小爽的博客</h1>
+                </a>
+            </div>
+            <div id="time" style="color: white;">
+                <p>
+                    <script>
+                        getTime();
+                        setInterval("getTime()",1000);
+                    </script>
+                </p>
+            </div>
+        </div>
+        <div id="body_content">
+            <div id="OptionBar">
+                <a href="https://baidu.com" class="URL" target="view"><div class="option" id="initial">百度</div></a>
+                <a href="http://www.google.com.hk" class="URL" target="view"><div class="option">Google</div></a>
+                <a href="https://cn.bing.com" class="URL" target="view"><div class="option">Bing</div></a>
+                <a href="https://www.wikipedia.de" class="URL" target="view"><div class="option">Wikipedia</div></a>
+                <a href="https://search.bilibili.com" class="URL" target="view"><div class="option">Bilibili</div></a>
+                <a href="https://www.xue8nav.com" class="URL" target="view"><div class="option">学吧导航</div></a>
+                <a href="https://site.sciping.com" class="URL" target="view"><div class="option">科塔学术</div></a>
+                <a href="http://shuxiangjia.cn" class="URL" target="view"><div class="option">书享家</div></a>
+                <a href="http://hippter.com" class="URL" target="view"><div class="option">HiPPTer</div></a>
+                <a href="https://www.sogou.com" class="URL" target="view"><div class="option">搜狗</div></a>
+                <a href="https://www.so.com" class="URL" target="view"><div class="option">360</div></a>
+                <a href="https://www.seeseed.com" class="URL" target="view"><div class="option">SeeSeed</div></a>
+                <a href="http://www.aliresearch.com" class="URL" target="view"><div class="option">阿里研究院</div></a>
+                <a href="http://research.baidu.com" class="URL" target="view"><div class="option">百度研究院</div></a>
+                <a href="https://tisi.org" class="URL" target="view"><div class="option">腾讯研究院</div></a>
+                <a href="https://www.jiguang.cn/reports" class="URL" target="view"><div class="option">极光行业报告</div></a>
+                <a href="https://www.iyiou.com/research" class="URL" target="view"><div class="option">亿欧智库</div></a>
+                <a href="https://www.hanghangcha.com" class="URL" target="view"><div class="option">行行查</div></a>
+                <a href="http://www.shujuju.cn" class="URL" target="view"><div class="option">数据局</div></a>
+                <a href="http://www.dajiadaohang.com" class="URL" target="view"><div class="option">打假导航</div></a>
+                <a href="http://hao.199it.com" class="URL" target="view"><div class="option">大数据导航</div></a>
+                <a href="https://www.questmobile.com.cn" class="URL" target="view"><div class="option">Quest Mobile</div></a>
+            </div>
+            <iframe src="" frameborder="0" name="view" style="width: 100%; height: 100%;"></iframe>
+        </div>
+        <div id="footing">
+            <ul class="nav_ul">
+                <li><a href="https://aur.one" target="_blank" class="bottomLink">一个开始</a></li>
+                <li><a href="https://search.chongbuluo.com" target="_blank" class="bottomLink">快搜</a></li>
+                <li><a href="http://www.pengzhihui.xyz" target="_blank" class="bottomLink">稚晖的个人站</a></li>
+                <li><a href="https://github.com" target="_blank" class="bottomLink">GitHub</a></li>
+                <li><a href="https://www.zhihu.com" target="_blank" class="bottomLink">知乎</a></li>
+                <li><span id="myself">About Me</span></li>
+            </ul>
+        </div>
+    </body>
+</html>

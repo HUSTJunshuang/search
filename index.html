@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>钢铁侠反应方舟</title>
+        <link rel="stylesheet" href="css/index.css">
+        <script>
+            /* 
+            location.href="url"         当前框架内跳转
+            self.location.href="url"    当前框架内跳转
+            window.location.href="url"  当前框架内跳转
+            this.location.href="url"    当前框架内跳转
+            parent.location.href="url"  父级框架内跳转
+            top.location.href="url"     顶级框架内跳转
+            */
+            function redirect(){
+                setTimeout(function(){top.location.href="search.html"}, 3000)
+            }
+        </script>
+    </head>
+    <body onload="redirect()">
+        <div class="container circle">
+            <div class="box1 circle center"></div>
+            <div class="box2 circle center"></div>
+            <div class="box3 circle center"></div>
+            <div class="box4 circle center"></div>
+            <div class="box5 circle center"></div>
+            <div class="box6 circle">
+                <div class="coil" style="--i: 0"></div>
+                <div class="coil" style="--i: 1"></div>
+                <div class="coil" style="--i: 2"></div>
+                <div class="coil" style="--i: 3"></div>
+                <div class="coil" style="--i: 4"></div>
+                <div class="coil" style="--i: 5"></div>
+                <div class="coil" style="--i: 6"></div>
+                <div class="coil" style="--i: 7"></div>
+            </div>
+        </div>
+    </body>
+</html>
